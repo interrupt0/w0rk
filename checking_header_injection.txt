@@ -1,0 +1,3 @@
+root@ubuntu:~# tcpdump -i eth0 -s0 -A port 80
+
+SEA-ML-LANE:~ lane$ curl -i 192.168.249.70
