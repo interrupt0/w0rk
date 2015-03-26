@@ -7,7 +7,7 @@ var onRequest= function(servReq, servResp, cliReq) {
 //  servResp.writeHead(404, {'Content-Type': 'text/html', 'foo': 'bar', 'PID': process.pid});
     servResp.setHeader('Content-Type', 'text/html; charset=UTF-8');
     servResp.setHeader('Transfer-Encoding', 'chunked');
-/* 
+ 
     var html =
         '<!DOCTYPE html>' +
         '<html lang="en">' +
@@ -46,7 +46,6 @@ var onRequest= function(servReq, servResp, cliReq) {
           servResp.write(html);
  
     }, 2000);
-*/
     cliReq();
     console.log('request fired');
 };
